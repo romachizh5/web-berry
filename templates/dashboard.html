@@ -2,24 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Панель Управления</title>
+    <link rel="shortcut icon" href="static/blueberries.png" />
 </head>
 <body>
-    <form method="POST">
-    <div class="container">
-        <label><b>Панель Управления</b></label>
-    </div>
-    </form>
+    <b>Панель Управления</b>
 
-    <dash method="POST">
-        <div class="layout">
-            <label><a>wdawd</a></label>
-            <label><a>wdawd</a></label>
-            <label><a>wdawd</a></label>
-            <label><a>wdawd</a></label>
-            <label><a>wdawd</a></label>
-        </div>
+    <theme>
+        <input type="submit" class="dark_theme" value="Темная Тема">
+
+        <input type="submit" class="light_theme" value="Светлая Тема">
+    </theme>
+
+    <dash>
+
+        <btn_groupe>
+            <input type="submit" class="auto_poliv" value="Вкл Автополив">
+            <input type="submit" class="auto_poliv" value="Выкл Автополив">
+        </btn_groupe>
+
+        <vlag>
+            <form>
+                <label><a1>100%</a1></label>
+                <label><a2>100%</a2></label>
+                <label><a3>100%</a3></label>
+                <label><a4>100%</a4></label>
+            </form>
+
+            <form>
+                <label><a1>100%</a1></label>
+                <label><a2></a2></label>
+                <label><a2></a2></label>
+                <label><a3>100%</a3></label>
+            </form>
+
+            <form>
+                <label><a1>100%</a1></label>
+                <label><a2>100%</a2></label>
+                <label><a3>100%</a3></label>
+                <label><a4>100%</a4></label>
+            </form>
+
+            <form>
+                <label><g1>___________Гектар 1__________</g1></label>
+            </form>
+        </vlag>
     </dash>
+
 
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/dashboard.css') }}">
 </body>
