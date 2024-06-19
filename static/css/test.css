@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa& display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #e0e0e0;
+}
+
+button {
+    width: 20%;
+    height: 10%;
+    font-size: 40px;
+    font-family: 'Comfortaa', cursive;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    color: #626262;
+    background: #e0e0e0;
+    box-shadow: 10px 10px 20px #bcbcbc, 10px 10px 20px #fff;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: inset 3px 3px 5px #bcbcbc, inset -3px 3px 5px #fff;
+{

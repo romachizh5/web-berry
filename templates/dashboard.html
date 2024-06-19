@@ -3,53 +3,458 @@
 <head>
     <meta charset="UTF-8">
     <title>Панель Управления</title>
-    <link rel="shortcut icon" href="static/blueberries.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <link rel="shortcut icon" href="../static/blueberries.png" />
 </head>
 <body>
-    <b>Панель Управления</b>
+    <header>
+        <form action="/change/" class="btn-person">
+            <!-- скрытый параметр -->
+            <input type="hidden" name="index" value="1">
+            <input type="submit" id="person" class="btn_person" value="">
+        </form>
 
-    <theme>
-        <input type="submit" class="dark_theme" value="Темная Тема">
+        <form class="text-header">
+            <div class="container">
+                <label class="Text"><b>Панель Управления</b></label>
+            </div>
+        </form>
 
-        <input type="submit" class="light_theme" value="Светлая Тема">
-    </theme>
+        <form action="/refresh/" method="POST" class="btn-refresh">
+            <!-- скрытый параметр -->
+            <input type="hidden" name="index" value="1">
+            <input type="submit" id="refresh" class="btn_refresh" value="">
+        </form>
+    </header>
 
-    <dash>
+    <status>
+        <bar>
+            <form class="from">
+                <label id="5" class="Text1"><a1>Автополив</a1></label>
+            </form>
 
-        <btn_groupe>
-            <input type="submit" class="auto_poliv" value="Вкл Автополив">
-            <input type="submit" class="auto_poliv" value="Выкл Автополив">
-        </btn_groupe>
+            <form class="from">
+                <label id="4" class="Text1"><a1>Насос</a1></label>
+            </form>
+        </bar>
 
         <vlag>
-            <form>
-                <label><a1>100%</a1></label>
-                <label><a2>100%</a2></label>
-                <label><a3>100%</a3></label>
-                <label><a4>100%</a4></label>
-            </form>
+            <hectare>
+                <form class="from">
+                    <label id="1">Гектар 1</label>
+                </form>
 
-            <form>
-                <label><a1>100%</a1></label>
-                <label><a2></a2></label>
-                <label><a2></a2></label>
-                <label><a3>100%</a3></label>
-            </form>
+                <field>
+                    <form class="from">
+                        <label><a1 class="1">100%</a1></label>
+                        <label><a2 class="2">100%</a2></label>
+                        <label><a3 class="3">100%</a3></label>
+                        <label><a4 class="4">100%</a4></label>
+                    </form>
 
-            <form>
-                <label><a1>100%</a1></label>
-                <label><a2>100%</a2></label>
-                <label><a3>100%</a3></label>
-                <label><a4>100%</a4></label>
-            </form>
+                    <form class="from">
+                        <label><a1 class="5">100%</a1></label>
+                        <label><a2></a2></label>
+                        <label><a2></a2></label>
+                        <label><a3 class="6">100%</a3></label>
+                    </form>
 
-            <form>
-                <label><g1>___________Гектар 1__________</g1></label>
-            </form>
+                    <form class="from">
+                        <label><a1 class="7">100%</a1></label>
+                        <label><a2 class="8">100%</a2></label>
+                        <label><a3 class="9">100%</a3></label>
+                        <label><a4 class="10">100%</a4></label>
+                    </form>
+                </field>
+            </hectare>
+
+            <hectare>
+                <form class="from">
+                    <label id="2">Гектар 2</label>
+                </form>
+
+                <field>
+                    <form class="from">
+                        <label><a1 class="11">100%</a1></label>
+                        <label><a2 class="12">100%</a2></label>
+                        <label><a3 class="13">100%</a3></label>
+                        <label><a4 class="14">100%</a4></label>
+                    </form>
+
+                    <form class="from">
+                        <label><a1 class="15">100%</a1></label>
+                        <label><a2></a2></label>
+                        <label><a2></a2></label>
+                        <label><a3 class="16">100%</a3></label>
+                    </form>
+
+                    <form class="from">
+                        <label><a1 class="17">100%</a1></label>
+                        <label><a2 class="18">100%</a2></label>
+                        <label><a3 class="19">100%</a3></label>
+                        <label><a4 class="20">100%</a4></label>
+                    </form>
+                </field>
+            </hectare>
+
+            <hectare>
+                <form class="from">
+                    <label id="3">Гектар 3</label>
+                </form>
+
+                <field>
+                    <form class="from">
+                        <label><a1 class="21">100%</a1></label>
+                        <label><a2 class="22">100%</a2></label>
+                        <label><a3 class="23">100%</a3></label>
+                        <label><a4 class="24">100%</a4></label>
+                    </form>
+
+                    <form class="from">
+                        <label><a1 class="25">100%</a1></label>
+                        <label><a2></a2></label>
+                        <label><a2></a2></label>
+                        <label><a3 class="26">100%</a3></label>
+                    </form>
+
+                    <form class="from">
+                        <label><a1 class="27">100%</a1></label>
+                        <label><a2 class="28">100%</a2></label>
+                        <label><a3 class="29">100%</a3></label>
+                        <label><a4 class="30">100%</a4></label>
+                    </form>
+                </field>
+            </hectare>
         </vlag>
-    </dash>
+    </status>
 
+    <btn_groupe>
+        <form action="/start_auto_poliv/" method="POST" class="from">
+            <!-- скрытый параметр -->
+            <input type="hidden" name="index" value="1">
+            <input type="submit" id="btn_start_auto_poliv" class="btn" value="Вкл Автополив">
+        </form>
+
+        <form action="/stop_auto_poliv/" method="POST" class="from">
+            <!-- скрытый параметр -->
+            <input type="hidden" name="index" value="1">
+            <input type="submit" id="btn_stop_auto_poliv" class="btn" value="Выкл Автополив">
+        </form>
+
+        <form action="/open_nasos/" method="POST" class="from">
+            <!-- скрытый параметр -->
+            <input type="hidden" name="index" value="1">
+            <input type="submit" id="btn_open_nasos" class="btn" value="Вкл Насос">
+        </form>
+
+        <form action="/close_nasos/" method="POST" class="from">
+            <!-- скрытый параметр -->
+            <input type="hidden" name="index" value="1">
+            <input type="submit" id="btn_close_nasos" class="btn" value="Выкл Насос">
+        </form>
+
+        <form action="/hectare1_open/" method="POST" class="from">
+            <!-- скрытый параметр -->
+            <input type="hidden" name="index" value="1">
+            <input type="submit" id="btn_open_1" class="btn" value="Вкл 1 Гектар">
+        </form>
+
+        <form action="/hectare1_close/" method="POST" class="from">
+            <!-- скрытый параметр -->
+            <input type="hidden" name="index" value="1">
+            <input type="submit" id="btn_close_1" class="btn" value="Выкл 1 Гектар">
+        </form>
+
+        <form action="/hectare2_open/" method="POST" class="from">
+            <!-- скрытый параметр -->
+            <input type="hidden" name="index" value="1">
+            <input type="submit" id="btn_open_2" class="btn" value="Вкл 2 Гектар">
+        </form>
+
+        <form action="/hectare2_close/" method="POST" class="from">
+            <!-- скрытый параметр -->
+            <input type="hidden" name="index" value="1">
+            <input type="submit" id="btn_close_2" class="btn" value="Выкл 2 Гектар">
+        </form>
+
+        <form action="/hectare3_open/" method="POST" class="from">
+            <!-- скрытый параметр -->
+            <input type="hidden" name="index" value="1">
+            <input type="submit" id="btn_open_3" class="btn" value="Вкл 3 Гектар">
+        </form>
+
+        <form action="/hectare3_close/" method="POST" class="from">
+            <!-- скрытый параметр -->
+            <input type="hidden" name="index" value="1">
+            <input type="submit" id="btn_close_3" class="btn" value="Выкл 3 Гектар">
+        </form>
+    </btn_groupe>
 
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/dashboard.css') }}">
 </body>
+<script>
+    const elem1 = document.getElementById("1");
+    const elem2 = document.getElementById("2");
+    const elem3 = document.getElementById("3");
+    const v1 = document.getElementsByClassName('1')[0]
+    const v2 = document.getElementsByClassName('2')[0]
+    const v3 = document.getElementsByClassName('3')[0]
+    const v4 = document.getElementsByClassName('4')[0]
+    const v5 = document.getElementsByClassName('5')[0]
+    const v6 = document.getElementsByClassName('6')[0]
+    const v7 = document.getElementsByClassName('7')[0]
+    const v8 = document.getElementsByClassName('8')[0]
+    const v9 = document.getElementsByClassName('9')[0]
+    const v10 = document.getElementsByClassName('10')[0]
+    const v11 = document.getElementsByClassName('11')[0]
+    const v12 = document.getElementsByClassName('12')[0]
+    const v13 = document.getElementsByClassName('13')[0]
+    const v14 = document.getElementsByClassName('14')[0]
+    const v15 = document.getElementsByClassName('15')[0]
+    const v16 = document.getElementsByClassName('16')[0]
+    const v17 = document.getElementsByClassName('17')[0]
+    const v18 = document.getElementsByClassName('18')[0]
+    const v19 = document.getElementsByClassName('19')[0]
+    const v20 = document.getElementsByClassName('20')[0]
+    const v21 = document.getElementsByClassName('21')[0]
+    const v22 = document.getElementsByClassName('22')[0]
+    const v23 = document.getElementsByClassName('23')[0]
+    const v24 = document.getElementsByClassName('24')[0]
+    const v25 = document.getElementsByClassName('25')[0]
+    const v26 = document.getElementsByClassName('26')[0]
+    const v27 = document.getElementsByClassName('27')[0]
+    const v28 = document.getElementsByClassName('28')[0]
+    const v29 = document.getElementsByClassName('29')[0]
+    const v30 = document.getElementsByClassName('30')[0]
+    const nasos_status = document.getElementById("4");
+    const auto_poliv = document.getElementById("5");
+    elem1.style.color = "green";
+    elem2.style.color = "red";
+    elem3.style.color = "red";
+    fetch("../static/data.json")
+      .then(response => response.json())
+      .then(data => {
+
+        if (data.hectare1 == true) {
+            elem1.style.color = "green";
+        }
+        if (data.hectare1 == false){
+            elem1.style.color = "red";
+        }
+        if (data.hectare2 == true){
+            elem2.style.color = "green";
+        }
+        if (data.hectare2 == false){
+            elem2.style.color = "red";
+        }
+        if (data.hectare3 == true){
+            elem3.style.color = "green";
+        }
+        if (data.hectare3 == false){
+            elem3.style.color = "red";
+        }
+    });
+    fetch("../static/nasos.json")
+      .then(response => response.json())
+      .then(nasos => {
+
+        if (nasos.nasos == true)
+            nasos_status.style.color = "green";
+
+    });
+    fetch("../static/poliv.json")
+      .then(response => response.json())
+      .then(poliv => {
+
+        if (poliv.poliv == true)
+            auto_poliv.style.color = "green";
+
+    });
+    fetch("../static/vlag.json")
+      .then(response => response.json())
+      .then(vlag => {
+
+        v1.textContent = vlag.v1 + "%";
+        if (vlag.v1 <= 40)
+            v1.style.color = "red";
+        if (vlag.v1 > 40)
+            v1.style.color = "green";
+
+        v2.textContent = vlag.v2 + "%";
+        if (vlag.v2 <= 40)
+            v2.style.color = "red";
+        if (vlag.v2 > 40)
+            v2.style.color = "green";
+
+        v3.textContent = vlag.v3 + "%";
+        if (vlag.v3 <= 40)
+            v3.style.color = "red";
+        if (vlag.v3 > 40)
+            v3.style.color = "green";
+
+        v4.textContent = vlag.v4 + "%";
+        if (vlag.v4 <= 40)
+            v4.style.color = "red";
+        if (vlag.v4 > 40)
+            v4.style.color = "green";
+
+        v5.textContent = vlag.v5 + "%";
+        if (vlag.v5 <= 40)
+            v5.style.color = "red";
+        if (vlag.v5 > 40)
+            v5.style.color = "green";
+
+        v6.textContent = vlag.v6 + "%";
+        if (vlag.v6 <= 40)
+            v6.style.color = "red";
+        if (vlag.v6 > 40)
+            v6.style.color = "green";
+
+        v7.textContent = vlag.v7 + "%";
+        if (vlag.v7 <= 40)
+            v7.style.color = "red";
+        if (vlag.v7 > 40)
+            v7.style.color = "green";
+
+        v8.textContent = vlag.v8 + "%";
+        if (vlag.v8 <= 40)
+            v8.style.color = "red";
+        if (vlag.v8 > 40)
+            v8.style.color = "green";
+
+        v9.textContent = vlag.v9 + "%";
+        if (vlag.v9 <= 40)
+            v9.style.color = "red";
+        if (vlag.v9 > 40)
+            v9.style.color = "green";
+
+        v10.textContent = vlag.v10 + "%";
+        if (vlag.v10 <= 40)
+            v10.style.color = "red";
+        if (vlag.v10 > 40)
+            v10.style.color = "green";
+
+        v11.textContent = vlag.v11 + "%";
+        if (vlag.v11 <= 40)
+            v11.style.color = "red";
+        if (vlag.v11 > 40)
+            v11.style.color = "green";
+
+        v12.textContent = vlag.v12 + "%";
+        if (vlag.v12 <= 40)
+            v12.style.color = "red";
+        if (vlag.v12 > 40)
+            v12.style.color = "green";
+
+        v13.textContent = vlag.v13 + "%";
+        if (vlag.v13 <= 40)
+            v13.style.color = "red";
+        if (vlag.v13 > 40)
+            v13.style.color = "green";
+
+        v14.textContent = vlag.v14 + "%";
+        if (vlag.v14 <= 40)
+            v14.style.color = "red";
+        if (vlag.v14 > 40)
+            v14.style.color = "green";
+
+        v15.textContent = vlag.v15 + "%";
+        if (vlag.v15 <= 40)
+            v15.style.color = "red";
+        if (vlag.v15 > 40)
+            v15.style.color = "green";
+
+        v16.textContent = vlag.v16 + "%";
+        if (vlag.v16 <= 40)
+            v16.style.color = "red";
+        if (vlag.v16 > 40)
+            v16.style.color = "green";
+
+        v17.textContent = vlag.v17 + "%";
+        if (vlag.v17 <= 40)
+            v17.style.color = "red";
+        if (vlag.v17 > 40)
+            v17.style.color = "green";
+
+        v18.textContent = vlag.v18 + "%";
+        if (vlag.v18 <= 40)
+            v18.style.color = "red";
+        if (vlag.v18 > 40)
+            v18.style.color = "green";
+
+        v19.textContent = vlag.v19 + "%";
+        if (vlag.v19 <= 40)
+            v19.style.color = "red";
+        if (vlag.v19 > 40)
+            v19.style.color = "green";
+
+        v20.textContent = vlag.v20 + "%";
+        if (vlag.v20 <= 40)
+            v20.style.color = "red";
+        if (vlag.v20 > 40)
+            v20.style.color = "green";
+
+        v21.textContent = vlag.v21 + "%";
+        if (vlag.v21 <= 40)
+            v21.style.color = "red";
+        if (vlag.v21 > 40)
+            v21.style.color = "green";
+
+        v22.textContent = vlag.v22 + "%";
+        if (vlag.v22 <= 40)
+            v22.style.color = "red";
+        if (vlag.v22 > 40)
+            v22.style.color = "green";
+
+        v23.textContent = vlag.v23 + "%";
+        if (vlag.v23 <= 40)
+            v23.style.color = "red";
+        if (vlag.v23 > 40)
+            v23.style.color = "green";
+
+        v24.textContent = vlag.v24 + "%";
+        if (vlag.v24 <= 40)
+            v24.style.color = "red";
+        if (vlag.v24 > 40)
+            v24.style.color = "green";
+
+        v25.textContent = vlag.v25 + "%";
+        if (vlag.v25 <= 40)
+            v25.style.color = "red";
+        if (vlag.v25 > 40)
+            v25.style.color = "green";
+
+        v26.textContent = vlag.v26 + "%";
+        if (vlag.v26 <= 40)
+            v26.style.color = "red";
+        if (vlag.v26 > 40)
+            v26.style.color = "green";
+
+        v27.textContent = vlag.v27 + "%";
+        if (vlag.v27 <= 40)
+            v27.style.color = "red";
+        if (vlag.v27 > 40)
+            v27.style.color = "green";
+
+        v28.textContent = vlag.v28 + "%";
+        if (vlag.v28 <= 40)
+            v28.style.color = "red";
+        if (vlag.v28 > 40)
+            v28.style.color = "green";
+
+        v29.textContent = vlag.v29 + "%";
+        if (vlag.v29 <= 40)
+            v29.style.color = "red";
+        if (vlag.v29 > 40)
+            v29.style.color = "green";
+
+        v30.textContent = vlag.v30 + "%";
+        if (vlag.v30 <= 40)
+            v30.style.color = "red";
+        if (vlag.v2 > 40)
+            v30.style.color = "green";
+
+    });
+</script>
 </html>

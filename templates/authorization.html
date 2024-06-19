@@ -1,17 +1,68 @@
-{% extends 'base.html' %}
-
-{% block title %}Login{% endblock %}
-
-{% block content %}
-    <form method="POST">
-        <div class="container">
-            <label for="Login"><b>Логин</b></label>
-
-            <input type="text" placeholder="" name="Login" required>
-            <label for="Password"><b>Пароль</b></label>
-            <input type="password" placeholder="" name="Password" required>
-            <button type="submit">Войти</button>
-    </form>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/auth.css') }}">
-{% endblock %}
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+
+</head>
+<body>
+
+    <div class="box">
+
+        <form method="POST">
+
+            <h2>Login Here</h2>
+
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="password" name="Login" required>
+                <label for="Login">Login:</label>
+            </div>
+
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" name="Password" required>
+                <label for="Password">Password:</label>
+            </div>
+
+<!--            <div class="forget">-->
+<!--                <label for="">-->
+<!--                    <input type="checkbox">Remember me-->
+<!--                </label>-->
+<!--                <label for="">-->
+<!--                    Forget Password-->
+<!--                </label>-->
+<!--            </div>-->
+            <button type="submit">Log In</button>
+
+
+<!--            <div class="register">-->
+<!--                <p>Don't have an account ? <a href="">register</a></p>-->
+<!--            </div>-->
+        </form>
+    </div>
+
+
+
+      <!--Social Liks codings below-->
+      <a id="source-link" class="meta-link" href="https://t.me/+7yc_oGHnLJhlOWVl" target="_blank">
+        <i class="fas fa-link"></i>
+        <span class="roboto-mono">Telegram❤</span>
+    </a>
+
+    <a id="yt-link" class="meta-link" href="https://vk.com/romachizh5" target="_blank">
+      <i class="fas fa-link"></i>
+      <span>VK❤</span>
+    </a>
+
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+
+</body>
+</html>

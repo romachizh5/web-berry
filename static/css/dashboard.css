@@ -1,79 +1,259 @@
-* {
-    background-color: #2F3133;
+@import url('https://fonts.googleapis.com/css?family=Comfortaa& display=swap');
+@media (max-width: 992px){
+    body{
+        display: grid;
+        grid-template-columns: 100%;
+        background: url('../fon2.png');
+        background-position: top;
+        background-size: cover;
+        filter: blur(0px);
+    }
+    .Text{
+        background-image: url("../images.jpg");
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 30px;
+    }
+    .text-header {
+        font: 14px Stem-Regular,arial, sans-serif;/*Выбираем шрифт */
+        border: 1px solid black;/*Цвет, размер и тип границы */
+        -webkit-border-radius: 20px;/*Скругляем углы */
+        color: #777991;/*Цвет label */
+        width: 90%; /*Ширина формы */
+        margin-right: auto; /*Положение формы */
+        margin-left: auto; /*Положение формы */
+        text-align: center; /*Центровка текста*/
+    }
+    header{
+        display: grid;
+        grid-template-columns: 15% 70% 15%;
+        padding-bottom: 20px;
+    }
+
+    .btn_refresh{
+        margin-left: 10%;
+        width: 33px;
+        height: 35px;
+        background-image: url("../refresh.png");
+        background-size: cover;
+        background-color: transparent;
+        border: none;
+    }
+
+    .btn_person{
+        margin-left: 25%;
+        width: 35px;
+        height: 35px;
+        background-image: url("../person.png");
+        background-size: cover;
+        background-color: transparent;
+        border: none;
+    }
+
+    btn_groupe{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-top: 20px;
+    }
+
+    .btn{
+        height: 30px;
+        width: 150px;
+    }
+
+    .btn {
+        font-family: 'Comfortaa', cursive;
+        border: none;
+        border-radius: 6px;
+        padding: 10px 20px;
+        color: #626262;
+        background: #e0e0e0;
+        cursor: pointer;
+    }
+
+    .btn:active {
+        box-shadow: inset 3px 3px 5px #bcbcbc, inset -3px 3px 5px #fff;
+    }
+
+    .from{
+        padding-bottom: 20px;
+        margin: auto;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    status{
+        display: grid;
+        grid-template-columns: 100%;
+        padding-bottom: 20px;
+        color: red;
+        margin: auto;
+        font: 14px Stem-Regular,arial, sans-serif;/*Выбираем шрифт */
+        border: 1px solid black;/*Цвет, размер и тип границы */
+        -webkit-border-radius: 20px;/*Скругляем углы */
+        color: #777991;/*Цвет label */
+        width: 90%; /*Ширина формы */
+        margin-right: auto; /*Положение формы */
+        margin-left: auto; /*Положение формы */
+        text-align: center; /*Центровка текста*/
+        background-color: #FFF8F8;
+    }
+
+    .Text1{
+        font-size: 20px;
+        color: red;
+    }
+
+    vlag{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    bar{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    field{
+        color: green;
+    }
 }
+@media (min-width: 1200px){
+    body{
+        display: grid;
+        grid-template-columns: 100%;
+        background: #e0e0e0;
+    }
+    .Text{
+        background-image: url("../images.jpg");
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 30px;
+    }
+    .text-header {
+        font: 14px Stem-Regular,arial, sans-serif;/*Выбираем шрифт */
+        border: 1px solid black;/*Цвет, размер и тип границы */
+        -webkit-border-radius: 20px;/*Скругляем углы */
+        color: #777991;/*Цвет label */
+        width: 90%; /*Ширина формы */
+        margin-right: auto; /*Положение формы */
+        margin-left: auto; /*Положение формы */
+        text-align: center; /*Центровка текста*/
+    }
+    header{
+        display: grid;
+        grid-template-columns: 15% 70% 15%;
+        padding-bottom: 20px;
+    }
 
-b {
-    text-align: left;
-    font-size: 50px;
-    color: #E3E5E2;
-}
+    .btn_refresh{
+        margin-left: 10%;
+        width: 33px;
+        height: 35px;
+        background-image: url("../refresh.png");
+        background-size: cover;
+        background-color: transparent;
+        border: none;
+    }
 
-form {
-    text-align: center;
-    font-size: 30px;
-    padding-top: 30px;
-}
+    .btn_person{
+        margin-left: 25%;
+        width: 35px;
+        height: 35px;
+        background-image: url("../person.png");
+        background-size: cover;
+        background-color: transparent;
+        border: none;
+    }
 
-label {
-    padding: 30px;
-    color: red;
-    border: 2px;
-}
+    btn_groupe{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-top: 20px;
+        width: 15%;
+        margin: auto;
+    }
 
-g1 {
-    color: #E3E5E2;
-}
+    .btn{
+        height: 30px;
+        width: 150px;
+    }
 
-dash {
-    display: grid;
-    grid-template-columns: 800px 800px;
-    padding: 30px;
-    height: 10px;
-}
+    .btn {
+        font-family: 'Comfortaa', cursive;
+        border: none;
+        border-radius: 6px;
+        padding: 10px 20px;
+        color: #626262;
+        background: #e0e0e0;
+        box-shadow: 10px 10px 20px #bcbcbc, 10px 10px 20px #fff;
+        cursor: pointer;
+    }
 
-vlag {
-    padding: 30px;
-}
+    .btn:active {
+        box-shadow: inset 3px 3px 5px #bcbcbc, inset -3px 3px 5px #fff;
+    }
 
-.auto_poliv {
-    height: 40px;
-    width: 140px;
-    border: none; /*Без границы*/
-    cursor: pointer;
-    font: 16px Stem-medium, arial, sans-serif; /*Выбираем шрифт кнопки */
-    background-color: #454cee; /*Выбираем цвет фона */
-    -webkit-border-radius: 8px; /*Закругление */
-    color: white;
+    .from{
+        padding-bottom: 20px;
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+    }
 
-}
+    status{
+        display: grid;
+        grid-template-columns: 100%;
+        padding-bottom: 20px;
+        color: red;
+        margin: auto;
+        font: 14px Stem-Regular,arial, sans-serif;/*Выбираем шрифт */
+        border: 1px solid black;/*Цвет, размер и тип границы */
+        -webkit-border-radius: 20px;/*Скругляем углы */
+        color: #777991;/*Цвет label */
+        width: 90%; /*Ширина формы */
+        margin-right: auto; /*Положение формы */
+        margin-left: auto; /*Положение формы */
+        text-align: center; /*Центровка текста*/
+        background-color: #e0e0e0;
+        width: 70%;
+    }
 
-btn_groupe {
-    display: grid;
-    grid-template-columns: 200px 200px;
-}
+    .Text1{
+        font-size: 20px;
+        color: red;
+    }
 
-theme {
-    padding-left: 1760px;
-}
+    vlag{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
 
-.dark_theme {
-    height: 40px;
-    width: 130px;
-    border: none; /*Без границы*/
-    cursor: pointer;
-    font: 16px Stem-medium, arial, sans-serif; /*Выбираем шрифт кнопки */
-    background-color: #2F3133; /*Выбираем цвет фона */
-    -webkit-border-radius: 8px; /*Закругление */
-    color: white;
-}
+    bar{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-bottom: 20px;
+    }
 
-.light_theme {
-    height: 40px;
-    width: 130px;
-    border: none; /*Без границы*/
-    cursor: pointer;
-    font: 16px Stem-medium, arial, sans-serif; /*Выбираем шрифт кнопки */
-    background-color: #E3E5E2; /*Выбираем цвет фона */
-    -webkit-border-radius: 8px; /*Закругление */
-    color: black;
+    field{
+        padding: 20px;
+        color: green;
+    }
+    form{
+        padding: 20px;
+    }
+    hectare{
+        font: 14px Stem-Regular,arial, sans-serif;/*Выбираем шрифт */
+        border: 1px solid black;/*Цвет, размер и тип границы */
+        -webkit-border-radius: 20px;/*Скругляем углы */
+        color: #777991;/*Цвет label */
+        width: 90%; /*Ширина формы */
+        margin-right: auto; /*Положение формы */
+        margin-left: auto; /*Положение формы */
+        text-align: center; /*Центровка текста*/
+    }
 }

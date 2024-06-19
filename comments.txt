@@ -1,0 +1,237 @@
+* {
+    background-color: #2F3133;
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+    height: 40px;
+    width: 140px;
+    border: none; /*Без границы*/
+    cursor: pointer;
+    font: 16px Stem-medium, arial, sans-serif; /*Выбираем шрифт кнопки */
+    background-color: #454cee; /*Выбираем цвет фона */
+    -webkit-border-radius: 8px; /*Закругление */
+    color: white;
+}
+
+<a href="#">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    Like
+</a>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+a {
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+}
+a:hover{
+    background: #00fffc;
+    color: #000;
+    box-shadow:
+        0 0 5px #00fffc,
+        0 0 25px #00fffc,
+        0 0 50px #00fffc,
+        0 0 200px #00fffc
+    ;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #005);
+}
+a:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+
+a:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient (90deg, transparent, #00fffc);
+    animation: btn1 1s linear infinite;
+
+}
+@keyframes btn1 {
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+
+a span:nth-child(2){
+    top: -100;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient (270deg, transparent, #00fffc);
+    animation: btn2 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes btn2 {
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+
+=====================================================================
+
+* {
+    background-color: #2F3133;
+}
+
+b {
+    display: grid;
+    grid-template-columns: 470px 140px 1900px;
+    text-align: left;
+    font-size: 50px;
+    color: #E3E5E2;
+}
+
+a {
+    color: white;
+    font-size: 30px;
+}
+
+.btn_refresh {
+    height: 40px;
+    width: 90px;
+    border: none; /*Без границы*/
+    cursor: pointer;
+    font: 16px Stem-medium, arial, sans-serif; /*Выбираем шрифт кнопки */
+    background-color: #454cee; /*Выбираем цвет фона */
+    -webkit-border-radius: 8px; /*Закругление */
+    color: white;
+}
+
+.reg {
+    margin-left: 1500px;
+}
+
+.btn_change {
+    height: 40px;
+    width: 190px;
+    border: none; /*Без границы*/
+    cursor: pointer;
+    font: 16px Stem-medium, arial, sans-serif; /*Выбираем шрифт кнопки */
+    background-color: #454cee; /*Выбираем цвет фона */
+    -webkit-border-radius: 8px; /*Закругление */
+    color: white;
+}
+
+form1 {
+    font-size: 20px;
+    text-align: center;
+    height: 40px;
+    width: 140px;
+}
+
+.from {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+label {
+    padding: 30px;
+    color: red;
+    border: 2px;
+}
+
+g1 {
+    color: #E3E5E2;
+}
+
+dash {
+    display: grid;
+    grid-template-columns: 800px 800px 800px;
+    padding: 30px;
+    height: 10px;
+}
+
+vlag {
+    padding: 30px;
+}
+
+.btn {
+    height: 40px;
+    width: 140px;
+    border: none; /*Без границы*/
+    cursor: pointer;
+    font: 16px Stem-medium, arial, sans-serif; /*Выбираем шрифт кнопки */
+    background-color: #454cee; /*Выбираем цвет фона */
+    -webkit-border-radius: 8px; /*Закругление */
+    color: white;
+}
+
+btn_groupe {
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+
+=======================================================
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+=======================================================
+
+.btn {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    font-family: monospace;
+    color: #fff;
+    background: linear-gradient(to left, #8E2DE2, #4A00E0, #8E2DE2);
+    text-decoration: none;
+    border-radius: 10px;
+    background-size: 200%;
+    transition: .5s;
+}
+.btn:hover {
+    background-position: right;
+}
