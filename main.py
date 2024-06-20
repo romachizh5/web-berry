@@ -7,7 +7,7 @@ import db as db
 
 
 app = Flask(__name__, template_folder="templates")
-
+fn.vlag()
 
 @app.route('/')
 def index():

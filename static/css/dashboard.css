@@ -119,6 +119,20 @@
     field{
         color: green;
     }
+    hectare{
+        font: 14px Stem-Regular,arial, sans-serif;/*Выбираем шрифт */
+        border: 1px solid black;/*Цвет, размер и тип границы */
+        -webkit-border-radius: 20px;/*Скругляем углы */
+        color: #777991;/*Цвет label */
+        width: 90%; /*Ширина формы */
+        margin-right: auto; /*Положение формы */
+        margin-left: auto; /*Положение формы */
+        text-align: center; /*Центровка текста*/
+    }
+    label{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
 @media (min-width: 1200px){
     body{
@@ -255,5 +269,9 @@
         margin-right: auto; /*Положение формы */
         margin-left: auto; /*Положение формы */
         text-align: center; /*Центровка текста*/
+    }
+    label{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
